@@ -3,7 +3,7 @@ const passwordInput = document.getElementById('password');
 const cpasswordInput = document.getElementById('cpassword');
 const emailInput = document.getElementById('email');
 const userInput = document.getElementById(`username`)
-// déclarations des element de formulaire 
+// déclarations des elements de formulaire 
 signupForm.addEventListener('submit', function (event) {
    
     if (passwordInput.value !== cpasswordInput.value) {
@@ -16,7 +16,7 @@ signupForm.addEventListener('submit', function (event) {
         password: passwordInput.value,
         email: emailInput.value,
         username: userInput.value,
-        // Ajoutez d'autres champs ici (ex: nom d'utilisateur, etc.)
+        
     };
 
     localStorage.setItem('userData', JSON.stringify(userData));
