@@ -1,115 +1,87 @@
-
-
-
-
-form{
-    display: flex;
-     flex-direction: column;
-    
-    align-items: center;
-    
-    background-color: #000000;
-    border: 7px outset #289be7;
-     border-radius: 37px 37px 37px 37px;
-  -webkit-border-radius: 37px 37px 37px 37px;
-  -moz-border-radius: 37px 37px 37px 37px;
-  justify-content:space-around;
-    color: white;
- width:450px;
- height: 450px;
-  }
-
-  
-  .cases img{
-  display: grid;
-  grid-template-columns: 150px 150px 150px 150px  150px 150px;
-  flex-direction: row;
-  width: 350px;
-  height: 350px;
-  justify-content: space-around;
-  justify-content: space-between;
-
-
-  }
-
-
-    
-      .navi {
-          text-transform: uppercase;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          background-color: #0a0909;
-          text-decoration: none;
-          color: white;
-         
-        
-          
-      }
-      .navi a {
-          text-decoration: none;
-          color: white;
-          
-      }
-
-  
-
-    
-    
-    
-    main{
-      
-      display: flex;
-      
-      flex-direction: column;
-          align-items:center;
-      
-      width: 950px;
-      height: 800px;
-    background-color: aquamarine;
- 
-    border-radius: 37px 37px 37px 37px;
-  -webkit-border-radius: 37px 37px 37px 37px;
-  -moz-border-radius: 37px 37px 37px 37px;
-    }
-   
-    .pos{
-      position: relative;
-
-      display: flex;
-      justify-content: center;
-      
-
-  
-
-    }
-
-    /*  
-    934 x698
-    */
-
-
-  
-  img{
-    width: 500px;
-    height: 500px;
-  }
-
-  p{
-    gap: 15px;
-    
-    
-  }
-
-
-
-  body{
-
+body {
     background-color: #ffffff;
-  }
+    margin: 0;
+    padding: 0;
+}
 
- ul{
-  list-style: none;
- }
+header {
+    background-color: #0a0909;
+}
 
-  
+.navi {
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navi a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Bloc acmain generé par ia pour reglé quelques soucis de mise en forme que j'avais du mal à indentifié
+ Centrage du bloc principal avec margin: 0 auto */
+.acmain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 950px;
+    margin: 30px auto; /* C'est cette ligne qui centre le bloc .acmain au milieu de la page */
+    padding: 20px;
+    background-color: aquamarine;
+    border-radius: 37px;
+}
+
+.pos {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+/*Bloc ia
+ Cibler uniquement l'image de détail pour éviter d'impacter d'autres images du site */
+.pos img {
+    width: 400px;
+    height: auto; /* Conserve les proportions de l'image */
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* bloc ia */
+.welcome-text {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.cmain form{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  flex-direction: column;
+  background-color: #1a1212;
+  display: flex;
+  color: #ffffff;
+  gap: 25PX;
+  height: auto;
+}
+
