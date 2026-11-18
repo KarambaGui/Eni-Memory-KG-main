@@ -85,3 +85,22 @@ h1 {
   height: auto;
 }
 
+
+
+/* block ia*/
+.cases {
+  display: grid;
+  /* S'adapte automatiquement : chaque colonne fait au minimum 250px */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  background-color: rgb(228, 203, 166);
+}
+/* block ia*/
+.cases img {
+  width: 40%;
+  height: 40%; /* Force une hauteur fixe pour harmoniser la grille */
+  
+  border-radius: 8px; 
+  padding: 50px;
+  
+}
