@@ -1,6 +1,6 @@
 JavaScript
 const loginForm = document.getElementById("loginform");
-// Si vous avez besoin de ces champs pour autre chose, gardez-les (avec les bons IDs) :
+
 const usernamecInput = document.getElementById("usernamec");
 const passwordInput = document.getElementById("password2"); // Corrigé
 
@@ -20,6 +20,7 @@ loginForm.addEventListener('submit', function(event) {
     // Vérification de l'e-mail ET du mot de passe
     if (emailSaisi === utilisateurStocke.email && motDePasseSaisi === utilisateurStocke.password) {
       console.log('Connexion réussie ! Bienvenue.');
+      window.location.href = "accueil.html"
       // Vous pouvez rediriger l'utilisateur ici, ex: window.location.href = "accueil.html";
     } else {
       console.log('Identifiants incorrects (e-mail ou mot de passe).');
@@ -28,3 +29,4 @@ loginForm.addEventListener('submit', function(event) {
     console.log('Aucun compte enregistré trouvé.');
   }
 });
+
