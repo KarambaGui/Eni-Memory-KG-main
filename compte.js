@@ -20,7 +20,7 @@ loginForm.addEventListener('submit', function(event) {
     // Vérification de l'e-mail ET du mot de passe
     if (emailSaisi === utilisateurStocke.email && motDePasseSaisi === utilisateurStocke.password) {
       console.log('Connexion réussie ! Bienvenue.');
-      window.location.href = "accueil.html"
+     
       // Vous pouvez rediriger l'utilisateur ici, ex: window.location.href = "accueil.html";
     } else {
       console.log('Identifiants incorrects (e-mail ou mot de passe).');
