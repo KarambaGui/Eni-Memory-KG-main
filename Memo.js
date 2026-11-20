@@ -48,11 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     // if (scoreDisplay) scoreDisplay.textContent = score;
 
                     // On réinitialise directement les variables pour le tour suivant
-                    hasFlippedCard = false;
-                    lockBoard = false;
-                    firstCard = null;
-                    secondCard = null;
-
+                  function flip(params) {
+                      hasFlippedCard = false;
+                      lockBoard = false;
+                      firstCard = null;
+                      secondCard = null;
+  
+                  }
                 } else {
                     // --- CAS B : CE N'EST PAS UN MATCH ---
                     lockBoard = true; // On bloque le plateau pour empêcher de cliquer partout
@@ -63,10 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         secondCard.classList.remove("flipped");
 
                         // On remet tout à zéro pour autoriser de nouveaux clics
-                        hasFlippedCard = false;
-                        lockBoard = false;
-                        firstCard = null;
-                        secondCard = null;
+                      flip()
                     }, 1000);
                 }
             }
